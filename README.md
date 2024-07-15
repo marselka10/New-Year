@@ -1,12 +1,9 @@
 # New-Year
-from datetime import datetime
+This code defines a function days_until_new_year which:
 
-def days_until_new_year():
-    today = datetime.now()
-    new_year = datetime(today.year + 1, 1, 1)
-    if today.month == 12 and today.day == 31:
-        return 0  # if today is already December 31st
-    days_remaining = (new_year - today).days
-    return days_remaining
+1. Gets the current date and time.
+2. Sets the date for the upcoming New Year.
+3. Calculates the difference in days between today and the next New Year.
+4. Returns the number of days remaining.
 
-print(f"Number of days until New Year 2025: {days_until_new_year()}")
+Running this script will output the number of days left until January 1, 2025.
