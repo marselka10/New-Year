@@ -9,3 +9,4 @@ def days_until_new_year():
     return days_remaining
 
 print(f"Number of days until New Year 2025: {days_until_new_year()}")
+# all
